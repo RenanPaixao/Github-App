@@ -4,6 +4,11 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
 `;
+export const ContentWrapper = styled.div`
+  @media (min-width: 800px) {
+    margin: 0 20%;
+  }
+`;
 
 export const ContainerTop = styled.div`
   height: 9rem;
@@ -65,5 +70,40 @@ export const DivImage = styled.div`
     height: 12.1875rem;
 
     margin-top: -5rem;
+  }
+`;
+
+export const DivInfo = styled.div`
+  margin-top: 3.5rem;
+
+  color: var(--white);
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: lighter;
+
+    margin: 0.5rem 0.5rem 0 1.5rem;
+  }
+  @media (min-width: 800px) {
+    width: min-content;
+  }
+`;
+
+export const Title = styled.h1`
+  height: 2.6rem;
+  font-size: 1.625rem;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+
+  div {
+    width: 0.7rem;
+    height: 100%;
+
+    margin-right: 0.8rem;
+
+    background-color: var(--yellow);
+    border-radius: 0 12px 12px 0;
   }
 `;
