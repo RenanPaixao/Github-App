@@ -1,4 +1,4 @@
-import { Container, ContainerTop, UsernameTop } from './style';
+import { Container, ContainerTop, UsernameTop, DivImage } from './style';
 import Logout from '../../assets/images/logout.svg';
 
 function Home() {
@@ -12,6 +12,9 @@ function Home() {
           </p>
         </UsernameTop>
       </ContainerTop>
+      <DivImage>
+        <h2>imagem</h2>
+      </DivImage>
     </Container>
   );
 }

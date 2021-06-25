@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerTop = styled.div`
-  height: 12rem;
+  height: 9rem;
 
   background-color: var(--gray-two);
 
@@ -19,13 +19,9 @@ export const UsernameTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem 0;
+  padding: 1.5rem 1rem 0;
 
   color: var(--white);
-
-  @media (min-width: 800px) {
-    padding: 2rem 4rem 0;
-  }
 
   p {
     display: flex;
@@ -34,6 +30,7 @@ export const UsernameTop = styled.div`
 
     @media (min-width: 800px) {
       font-size: 1.6rem;
+      margin: 0 2rem;
     }
 
     img {
@@ -48,5 +45,25 @@ export const UsernameTop = styled.div`
         height: 2.1875rem;
       }
     }
+  }
+`;
+
+export const DivImage = styled.div`
+  width: 8.1875rem;
+  height: 8.1875rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: -3.75rem auto 0;
+
+  background-color: var(--white);
+
+  @media (min-width: 800px) {
+    width: 12.1875rem;
+    height: 12.1875rem;
+
+    margin-top: -5rem;
   }
 `;
