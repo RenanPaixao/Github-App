@@ -1,8 +1,10 @@
 import GlobalStyles from './assets/styles/GlobalStyles';
+import Home from './pages/Home/index';
 function App() {
   return (
     <>
-      <GlobalStyles />;
+      <GlobalStyles />
+      <Home />
     </>
   );
 }
