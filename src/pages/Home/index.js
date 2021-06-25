@@ -27,7 +27,7 @@ function Home() {
         <DivInfo>
           <Title>
             <div />
-            Username
+            USERNAME
           </Title>
           <h3>email@gmail.com</h3>
           <h3>Cidade</h3>

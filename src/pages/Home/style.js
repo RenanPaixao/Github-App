@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+
+  color: var(--white);
 `;
 export const ContentWrapper = styled.div`
   @media (min-width: 800px) {
@@ -25,8 +27,6 @@ export const UsernameTop = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 1rem 0;
-
-  color: var(--white);
 
   p {
     display: flex;
@@ -75,8 +75,6 @@ export const DivImage = styled.div`
 
 export const DivInfo = styled.div`
   margin-top: 3.5rem;
-
-  color: var(--white);
 
   h3 {
     font-size: 1.125rem;
