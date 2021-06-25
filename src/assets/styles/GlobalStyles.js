@@ -17,6 +17,14 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Inter', sans-serif;
         box-sizing: border-box;
     }
+    body{    
+        box-sizing: border-box;
+        background-color: var(--gray-one);
+        overflow-y: hidden;
+    }
+    html, body, #root {
+        height: 100%
+    }
 html,
 body,
 div,
