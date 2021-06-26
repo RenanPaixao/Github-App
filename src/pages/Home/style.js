@@ -64,6 +64,7 @@ export const DivImage = styled.div`
   margin: -3.75rem auto 0;
 
   background-color: var(--white);
+  color: var(--black);
 
   @media (min-width: 800px) {
     width: 12.1875rem;

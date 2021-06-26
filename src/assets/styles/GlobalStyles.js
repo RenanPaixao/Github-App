@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
         --green-lock: #63BF1F;
         --yellow: #FFCE00;
         --white: #FFFFFF;
+        --black: #000000;
     }
     *{
         font-family: 'Inter', sans-serif;
