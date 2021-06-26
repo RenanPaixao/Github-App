@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const Container = styled.ul`
   width: 100%;
   height: 5.5rem;
-
   display: flex;
   position: fixed;
   bottom: 0;
@@ -11,8 +10,12 @@ const Container = styled.ul`
   align-items: center;
   border-radius: 15px 15px 0 0;
 
+  a {
+    text-decoration: none;
+    color: var(--black);
+  }
+
   background-color: var(--white);
-  color: var(--black);
 
   @media (min-width: 800px) {
     height: 4rem;
