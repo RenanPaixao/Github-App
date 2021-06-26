@@ -1,8 +1,8 @@
 import ImageWrapperStyle from './style';
 
-function ImageWrapper() {
+function ImageWrapper(props) {
   return (
-    <ImageWrapperStyle>
+    <ImageWrapperStyle small={props.small}>
       <h2>imagem</h2>
     </ImageWrapperStyle>
   );

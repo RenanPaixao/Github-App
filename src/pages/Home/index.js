@@ -1,5 +1,5 @@
 import UsernameTop from './components/UsernameTop/index';
-import ImageWrapper from './components/ImageWrapper/index';
+import ImageWrapper from '../../components/ImageWrapper/index';
 import InfoWrapper from './components/InfoWrapper/index';
 import FollowBar from './components/FollowBar/index';
 import BioWrapper from './components/BioWrapper/index';

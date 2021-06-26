@@ -19,6 +19,23 @@ const ImageWrapperStyle = styled.div`
 
     margin-top: -5rem;
   }
+
+  ${(props) => {
+    if (props.small) {
+      return `width: 5rem; 
+      height: 5rem;
+      
+      margin: 0 0 0 0.5rem;
+      
+      @media (min-width: 800px) {
+        width: 6.1875rem;
+        height: 6.1875rem;
+
+        margin: 0 0 0 0.5rem;
+        
+  }`;
+    }
+  }}
 `;
 
 export default ImageWrapperStyle;

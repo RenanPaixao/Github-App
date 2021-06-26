@@ -1,15 +1,15 @@
 import Repo from './components/Repo';
 
-import RepositoriesWrapper from './style';
+import ContentPageWrapper from '../../components/Container/style';
 
 function Repositories() {
   return (
-    <RepositoriesWrapper>
+    <ContentPageWrapper>
       <Repo />
       <Repo />
       <Repo />
       <Repo />
-    </RepositoriesWrapper>
+    </ContentPageWrapper>
   );
 }
 
