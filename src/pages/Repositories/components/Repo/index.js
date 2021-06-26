@@ -12,12 +12,12 @@ function Repo() {
       <InfoRepo>
         Repository for centralization of the BrasiliApp mobile project
       </InfoRepo>
-      <div class="repoInfo">
+      <div className="repoInfo">
         <span>
           <img src={Star} alt="estrela" />
           <p>32</p>
         </span>
-        <span class="padlock">
+        <span className="padlock">
           <img src={Unlock} alt="Cadeado aberto" />
           <img src={Lock} alt="Cadeado Fechado" />
         </span>

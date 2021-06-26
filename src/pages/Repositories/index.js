@@ -1,7 +1,16 @@
 import Repo from './components/Repo';
 
+import RepositoriesWrapper from './style';
+
 function Repositories() {
-  return <Repo />;
+  return (
+    <RepositoriesWrapper>
+      <Repo />
+      <Repo />
+      <Repo />
+      <Repo />
+    </RepositoriesWrapper>
+  );
 }
 
 export default Repositories;
