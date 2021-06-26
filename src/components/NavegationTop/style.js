@@ -8,6 +8,10 @@ const NavegationTopStyle = styled.div`
 
   background-color: var(--gray-two);
 
+  @media (min-width: 800px) {
+    margin: 0 20%;
+  }
+
   h3 {
     font-size: 1.0625rem;
     font-weight: 500;
