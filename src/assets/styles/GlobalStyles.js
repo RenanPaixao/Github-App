@@ -7,6 +7,7 @@ const GlobalStyles = createGlobalStyle`
         --gray-three: #A5A5A5;  //icons off (menu-bar)
         --gray-four: #5252525D;   // follow bar
         --gray-five: #535353;   //input text login
+        --gray-six: #d8d6d6; //info Repo
         --red: #EB2D2D;
         --red-lock: #CC042A; 
         --green-lock: #63BF1F;
