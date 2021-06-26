@@ -5,6 +5,8 @@ const Container = styled.ul`
   height: 5.5rem;
 
   display: flex;
+  position: fixed;
+  bottom: 0;
   justify-content: space-around;
   align-items: center;
   border-radius: 15px 15px 0 0;
@@ -13,10 +15,11 @@ const Container = styled.ul`
   color: var(--black);
 
   @media (min-width: 800px) {
-    width: 80%;
     height: 4rem;
+    width: 40%;
 
-    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   li {

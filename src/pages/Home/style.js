@@ -7,8 +7,10 @@ export const Container = styled.div`
   color: var(--white);
 `;
 export const ContentWrapper = styled.div`
+  padding-bottom: 4rem;
   @media (min-width: 800px) {
     margin: 0 20%;
+    padding-bottom: 4.5rem;
   }
 `;
 

@@ -3,9 +3,11 @@ import Follow from '../../components/Follow/index';
 
 function Following() {
   return (
-    <ContentPageWrapper>
-      <Follow />
-    </ContentPageWrapper>
+    <>
+      <ContentPageWrapper>
+        <Follow />
+      </ContentPageWrapper>
+    </>
   );
 }
 

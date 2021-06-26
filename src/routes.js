@@ -5,7 +5,7 @@ import Repositories from './pages/Repositories';
 import Followers from './pages/Followers';
 import Following from './pages/Following';
 import NotFound from './pages/NotFound';
-
+import MenuBar from './components/MenuBar/index';
 import NavegationTop from './components/NavegationTop/index';
 
 function Routes() {
@@ -17,15 +17,19 @@ function Routes() {
         </Route>
         <Route path="/" exact>
           <Home />
+          <MenuBar />
         </Route>
         <Route path="/repositories" exact>
           <Repositories />
+          <MenuBar />
         </Route>
         <Route path="/followers" exact>
           <Followers />
+          <MenuBar />
         </Route>
         <Route path="/following" exact>
           <Following />
+          <MenuBar />
         </Route>
         <Route path="*">
           <NotFound />
