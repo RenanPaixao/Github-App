@@ -4,8 +4,8 @@ const GlobalStyles = createGlobalStyle`
     :root{
         --gray-one: #292929;
         --gray-two: #1F1F1F;    // top
-        --gray-three: #383838;  //icons off (menu-bar)
-        --gray-four: #A5A5A5;   // follow bar
+        --gray-three: #A5A5A5;  //icons off (menu-bar)
+        --gray-four: #5252525D;   // follow bar
         --gray-five: #535353;   //input text login
         --red: #EB2D2D;
         --red-lock: #CC042A; 
