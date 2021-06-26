@@ -1,10 +1,10 @@
 import InfoWrapperStyle from './style';
 import Title from '../Title/index';
 
-function InfoWrapper(props) {
+function InfoWrapper() {
   return (
     <InfoWrapperStyle>
-      <Title title={props.title} />
+      <Title title="USERNAME" />
       <h3>email@gmail.com</h3>
       <h3>Cidade</h3>
     </InfoWrapperStyle>

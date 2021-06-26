@@ -17,7 +17,7 @@ function Home() {
       <ContentWrapper>
         <InfoWrapper title="USERNAME" />
         <FollowBar />
-        <BioWrapper title="BIO" />
+        <BioWrapper />
         <MenuBar />
       </ContentWrapper>
     </Container>

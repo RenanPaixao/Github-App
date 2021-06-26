@@ -1,13 +1,10 @@
 import Bio from './style';
 import Title from '../Title/index';
 
-function BioWrapper(props) {
+function BioWrapper() {
   return (
     <Bio>
-      <Title title={props.title}>
-        <div />
-        {props.title}
-      </Title>
+      <Title title="BIO"></Title>
       <p>
         Contrary to popular belief, Lorem Ipsum is not simply random text. It
         has roots in a piece of classical Latin literature from 45 BC, making it
