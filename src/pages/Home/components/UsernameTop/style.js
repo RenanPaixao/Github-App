@@ -15,7 +15,8 @@ const UsernameTopStyle = styled.div`
 
     @media (min-width: 800px) {
       font-size: 1.6rem;
-      margin: 0 2rem;
+      padding: 0;
+      margin-left: 20%;
     }
 
     img {
@@ -33,6 +34,10 @@ const UsernameTopStyle = styled.div`
   }
   #exit {
     font-weight: lighter;
+
+    @media (min-width: 800px) {
+      margin-right: 20%;
+    }
   }
 `;
 
