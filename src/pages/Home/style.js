@@ -23,6 +23,8 @@ export const ContainerTop = styled.div`
 `;
 
 export const UsernameTop = styled.div`
+  font-weight: bold;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,6 +52,9 @@ export const UsernameTop = styled.div`
         height: 2.1875rem;
       }
     }
+  }
+  #exit {
+    font-weight: lighter;
   }
 `;
 
@@ -104,5 +109,28 @@ export const Title = styled.h1`
 
     background-color: var(--yellow);
     border-radius: 0 12px 12px 0;
+  }
+`;
+export const FollowBar = styled.ul`
+  width: 100%;
+  height: 7rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2.3rem 0;
+
+  background-color: var(--gray-four);
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.0625rem;
+    }
   }
 `;

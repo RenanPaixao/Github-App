@@ -6,6 +6,7 @@ import {
   DivInfo,
   ContentWrapper,
   Title,
+  FollowBar,
 } from './style';
 import Logout from '../../assets/images/logout.svg';
 
@@ -15,7 +16,7 @@ function Home() {
       <ContainerTop>
         <UsernameTop>
           <p>#User</p>
-          <p>
+          <p id="exit">
             Sair <img src={Logout} alt="Logout" />
           </p>
         </UsernameTop>
@@ -32,6 +33,20 @@ function Home() {
           <h3>email@gmail.com</h3>
           <h3>Cidade</h3>
         </DivInfo>
+        <FollowBar>
+          <li>
+            <h2>32</h2>
+            <p>Seguidores</p>
+          </li>
+          <li>
+            <h2>32</h2>
+            <p>Seguindo</p>
+          </li>
+          <li>
+            <h2>10</h2>
+            <p>Repos</p>
+          </li>
+        </FollowBar>
       </ContentWrapper>
     </Container>
   );
