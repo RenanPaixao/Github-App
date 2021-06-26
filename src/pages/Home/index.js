@@ -7,7 +7,11 @@ import {
   ContentWrapper,
   Title,
   FollowBar,
+  BioWrapper,
 } from './style';
+
+import MenuBar from '../../components/MenuBar/index';
+
 import Logout from '../../assets/images/logout.svg';
 
 function Home() {
@@ -47,6 +51,21 @@ function Home() {
             <p>Repos</p>
           </li>
         </FollowBar>
+
+        <BioWrapper>
+          <Title>
+            <div />
+            BIO
+          </Title>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. Richard McClintock, a Latin professor
+            at Hampden-Sydney College in Virginia, looked up one of the more
+            obscure Latin words, consectetur.
+          </p>
+        </BioWrapper>
+        <MenuBar />
       </ContentWrapper>
     </Container>
   );

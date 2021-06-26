@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
     body{    
         box-sizing: border-box;
         background-color: var(--gray-one);
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
     html, body, #root {
         height: 100%

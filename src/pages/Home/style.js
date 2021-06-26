@@ -134,3 +134,12 @@ export const FollowBar = styled.ul`
     }
   }
 `;
+
+export const BioWrapper = styled.div`
+  p {
+    font-weight: lighter;
+    font-size: 1.125rem;
+
+    margin: 0.5rem 1.5rem 1.5rem 1.5rem;
+  }
+`;
