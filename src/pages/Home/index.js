@@ -1,70 +1,23 @@
-import {
-  Container,
-  ContainerTop,
-  UsernameTop,
-  DivImage,
-  DivInfo,
-  ContentWrapper,
-  Title,
-  FollowBar,
-  BioWrapper,
-} from './style';
-
+import UsernameTop from './components/UsernameTop/index';
+import ImageWrapper from './components/ImageWrapper/index';
+import InfoWrapper from './components/InfoWrapper/index';
+import FollowBar from './components/FollowBar/index';
+import BioWrapper from './components/BioWrapper/index';
 import MenuBar from '../../components/MenuBar/index';
 
-import Logout from '../../assets/images/logout.svg';
+import { Container, ContainerTop, ContentWrapper } from './style';
 
 function Home() {
   return (
     <Container>
       <ContainerTop>
-        <UsernameTop>
-          <p>#User</p>
-          <p id="exit">
-            Sair <img src={Logout} alt="Logout" />
-          </p>
-        </UsernameTop>
+        <UsernameTop />
       </ContainerTop>
-      <DivImage>
-        <h2>imagem</h2>
-      </DivImage>
+      <ImageWrapper />
       <ContentWrapper>
-        <DivInfo>
-          <Title>
-            <div />
-            USERNAME
-          </Title>
-          <h3>email@gmail.com</h3>
-          <h3>Cidade</h3>
-        </DivInfo>
-        <FollowBar>
-          <li>
-            <h2>32</h2>
-            <p>Seguidores</p>
-          </li>
-          <li>
-            <h2>32</h2>
-            <p>Seguindo</p>
-          </li>
-          <li>
-            <h2>10</h2>
-            <p>Repos</p>
-          </li>
-        </FollowBar>
-
-        <BioWrapper>
-          <Title>
-            <div />
-            BIO
-          </Title>
-          <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur.
-          </p>
-        </BioWrapper>
+        <InfoWrapper title="USERNAME" />
+        <FollowBar />
+        <BioWrapper title="BIO" />
         <MenuBar />
       </ContentWrapper>
     </Container>
