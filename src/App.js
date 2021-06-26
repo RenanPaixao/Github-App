@@ -1,10 +1,11 @@
 import GlobalStyles from './assets/styles/GlobalStyles';
-import Home from './pages/Home/index';
+import NavegationTop from './components/NavegationTop/index';
+
 function App() {
   return (
     <>
       <GlobalStyles />
-      <Home />
+      <NavegationTop />
     </>
   );
 }
