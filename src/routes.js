@@ -20,7 +20,7 @@ function Routes() {
           <MenuBar />
         </Route>
         <Route path="/repositories" exact>
-          <NavegationTop page="Repositórios" />
+          <NavegationTop page="repositórios" />
           <Repositories />
           <MenuBar />
         </Route>
