@@ -12,22 +12,25 @@ function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/login" exact>
+        <Route path="/" exact>
           <Login />
         </Route>
-        <Route path="/" exact>
+        <Route path="/home" exact>
           <Home />
           <MenuBar />
         </Route>
         <Route path="/repositories" exact>
+          <NavegationTop page="Repositórios" />
           <Repositories />
           <MenuBar />
         </Route>
         <Route path="/followers" exact>
+          <NavegationTop page="seguidores" />
           <Followers />
           <MenuBar />
         </Route>
         <Route path="/following" exact>
+          <NavegationTop page="perfis" />
           <Following />
           <MenuBar />
         </Route>
