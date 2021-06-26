@@ -1,5 +1,5 @@
 import Bio from './style';
-import Title from '../Title/index';
+import Title from '../../../../components/Title/index';
 
 function BioWrapper() {
   return (
