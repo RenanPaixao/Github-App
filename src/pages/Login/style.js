@@ -30,6 +30,27 @@ export const Container = styled.div`
     filter: invert(84%) sepia(23%) saturate(4162%) hue-rotate(356deg)
       brightness(102%) contrast(109%);
   }
+  #alert {
+    font-size: 0.8rem;
+    width: max-content;
+
+    display: none;
+    position: relative;
+    z-index: 23;
+    transform: translate(52%, -3rem);
+
+    color: var(--red);
+
+    label {
+      cursor: text;
+    }
+
+    @media (min-width: 800px) {
+      font-size: 1rem;
+
+      transform: translate(53%, -3.33rem);
+    }
+  }
 `;
 
 export const Button = styled.button`
