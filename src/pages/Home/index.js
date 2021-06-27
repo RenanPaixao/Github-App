@@ -17,7 +17,7 @@ function Home() {
       <ContainerTop>
         <UsernameTop />
       </ContainerTop>
-      <ImageWrapper />
+      <ImageWrapper image={user.avatarUrl} />
       <ContentWrapper>
         <InfoWrapper
           title={user.name}

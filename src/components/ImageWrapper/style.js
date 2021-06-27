@@ -13,11 +13,25 @@ const ImageWrapperStyle = styled.div`
   background-color: var(--white);
   color: var(--black);
 
+  img {
+    width: 7.7275rem;
+    height: 7.7275rem;
+
+    border-radius: 50%;
+  }
+
   @media (min-width: 800px) {
     width: 12.1875rem;
     height: 12.1875rem;
 
     margin-top: -5rem;
+
+    img {
+      width: 11.5275rem;
+      height: 11.5275rem;
+
+      border-radius: 50%;
+    }
   }
 
   ${(props) => {

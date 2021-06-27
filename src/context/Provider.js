@@ -1,5 +1,5 @@
 import Context from './Context';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 
 const user1 = {
