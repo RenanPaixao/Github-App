@@ -15,7 +15,7 @@ function Home() {
   return (
     <Container>
       <ContainerTop>
-        <UsernameTop />
+        <UsernameTop login={user.login} />
       </ContainerTop>
       <ImageWrapper image={user.avatarUrl} />
       <ContentWrapper>
