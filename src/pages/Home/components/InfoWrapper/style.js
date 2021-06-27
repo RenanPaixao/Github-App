@@ -3,7 +3,12 @@ import styled from 'styled-components';
 const InfoWrapperStyle = styled.div`
   margin-top: 3.5rem;
 
+  h1 {
+    min-width: max-content;
+  }
+
   h3 {
+    min-width: max-content;
     font-size: 1.125rem;
     font-weight: lighter;
 
@@ -11,6 +16,10 @@ const InfoWrapperStyle = styled.div`
   }
   @media (min-width: 800px) {
     width: min-content;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
   }
 `;
 
