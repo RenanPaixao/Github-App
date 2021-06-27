@@ -8,6 +8,10 @@ const UsernameTopStyle = styled.div`
   justify-content: space-between;
   padding: 1.5rem 1rem 0;
 
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
   p {
     display: flex;
     align-items: center;
