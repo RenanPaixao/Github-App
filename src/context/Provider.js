@@ -54,7 +54,7 @@ const Provider = ({ children }) => {
     <Context.Provider
       value={{
         user: user,
-        setUser: () => setUser,
+        setUser: setUser,
         searchUser: (username) => searchUser(username),
       }}
     >
