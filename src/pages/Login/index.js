@@ -6,11 +6,8 @@ import { Link } from 'react-router-dom';
 import Context from '../../context/Context';
 
 function Login() {
-  const { user, setUser, searchUser } = useContext(Context);
+  const { user, saveUser } = useContext(Context);
 
-  function showAlert() {
-    document.getElementById('alert').style.display = 'block';
-  }
   function hideAlert() {
     document.getElementById('alert').style.display = 'none';
   }
@@ -36,33 +33,17 @@ function Login() {
       </p>
       <Link
         to="/home"
-        onClick={(e) => {
-          setTimeout(() => {
-            if (user.login !== null) {
-              return;
+        onClick={async (e) => {
+          try {
+            if (!saveUser()) {
+              e.preventDefault();
             }
-            e.preventDefault();
-          }, 500);
+          } catch (err) {
+            alert(err);
+          }
         }}
       >
-        <Button
-          onClick={async () => {
-            const valor = document.getElementById('username').value;
-
-            if (valor.trim() === '') {
-              showAlert();
-              return;
-            }
-            try {
-              setUser(await searchUser(valor));
-            } catch (err) {
-              alert('Usuário não encontrado!');
-              return;
-            }
-          }}
-        >
-          {'ENTRAR ->'}
-        </Button>
+        <Button>{'ENTRAR ->'}</Button>
       </Link>
     </Container>
   );

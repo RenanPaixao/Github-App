@@ -19,6 +19,9 @@ const user1 = {
   followers: null,
   following: null,
 };
+function showAlert() {
+  document.getElementById('alert').style.display = 'block';
+}
 
 async function searchUser(username) {
   return await axios
@@ -50,12 +53,26 @@ async function searchUser(username) {
 const Provider = ({ children }) => {
   const [user, setUser] = useState(user1);
 
+  async function saveUser() {
+    const valor = document.getElementById('username').value;
+
+    if (valor.trim() === '') {
+      showAlert();
+      return false;
+    }
+    try {
+      setUser(await searchUser(valor));
+    } catch (err) {
+      alert('Usuário não encontrado!');
+      return false;
+    }
+    return true;
+  }
   return (
     <Context.Provider
       value={{
         user: user,
-        setUser: setUser,
-        searchUser: (username) => searchUser(username),
+        saveUser: saveUser,
       }}
     >
       {children}
