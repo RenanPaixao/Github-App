@@ -4,9 +4,14 @@ import InfoWrapper from './components/InfoWrapper/index';
 import FollowBar from './components/FollowBar/index';
 import BioWrapper from './components/BioWrapper/index';
 
+import Context from '../../context/Context';
+import { useContext } from 'react';
+
 import { Container, ContainerTop, ContentWrapper } from './style';
 
 function Home() {
+  const { user } = useContext(Context);
+
   return (
     <Container>
       <ContainerTop>
@@ -14,9 +19,13 @@ function Home() {
       </ContainerTop>
       <ImageWrapper />
       <ContentWrapper>
-        <InfoWrapper title="USERNAME" />
+        <InfoWrapper
+          title={user.name}
+          email={user.email}
+          location={user.location}
+        />
         <FollowBar />
-        <BioWrapper />
+        <BioWrapper bio={user.bio} />
       </ContentWrapper>
     </Container>
   );

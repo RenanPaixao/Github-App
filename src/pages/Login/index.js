@@ -32,7 +32,7 @@ function Login() {
           hideAlert();
         }}
       >
-        <label for="username">*Campo Obrigatório</label>
+        <label htmlFor="username">*Campo Obrigatório</label>
       </p>
       <Link
         to="/home"
