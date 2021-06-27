@@ -11,6 +11,11 @@ const FollowBarStyle = styled.ul`
 
   background-color: var(--gray-four);
 
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
   li {
     display: flex;
     flex-direction: column;
