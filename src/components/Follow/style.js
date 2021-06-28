@@ -11,7 +11,7 @@ const FollowWrapper = styled.div`
   h4 {
     margin: 0 auto 0 2rem;
   }
-  img {
+  #arrow {
     height: 1.7rem;
 
     margin-right: 2rem;

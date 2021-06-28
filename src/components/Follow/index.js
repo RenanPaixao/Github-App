@@ -10,7 +10,7 @@ export default function Follow({ image, login }) {
       <Title />
       <ImageWrapper image={image} small />
       <h4>#{login ? login : 'USERNAME'}</h4>
-      <img src={ArrowRight} alt="Seta para ver perfil" />
+      <img id="arrow" src={ArrowRight} alt="Seta para ver perfil" />
     </FollowWrapper>
   );
 }
