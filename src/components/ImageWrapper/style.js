@@ -47,7 +47,8 @@ const ImageWrapperStyle = styled.div`
 
         margin: 0 0 0 0.5rem;
         
-  }
+      }
+    }
   img {
       width: 4.6275rem;
       height: 4.6275rem;
