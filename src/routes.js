@@ -7,6 +7,8 @@ import Following from './pages/Following';
 import NotFound from './pages/NotFound';
 import MenuBar from './components/MenuBar/index';
 import NavegationTop from './components/NavegationTop/index';
+import Context from './context/Context';
+import { useContext } from 'react';
 
 function Routes() {
   return (
@@ -25,12 +27,10 @@ function Routes() {
           <MenuBar />
         </Route>
         <Route path="/followers" exact>
-          <NavegationTop page="seguidores" />
           <Followers />
           <MenuBar />
         </Route>
         <Route path="/following" exact>
-          <NavegationTop page="perfis" />
           <Following />
           <MenuBar />
         </Route>
