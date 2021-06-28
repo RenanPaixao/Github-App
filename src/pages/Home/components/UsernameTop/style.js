@@ -11,6 +11,10 @@ const UsernameTopStyle = styled.div`
   a {
     text-decoration: none;
     color: var(--white);
+
+    @media (min-width: 800px) {
+      margin-right: 20%;
+    }
   }
   p {
     display: flex;
@@ -38,10 +42,6 @@ const UsernameTopStyle = styled.div`
   }
   #exit {
     font-weight: lighter;
-
-    @media (min-width: 800px) {
-      margin-right: 20%;
-    }
   }
 `;
 
