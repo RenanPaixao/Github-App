@@ -15,7 +15,6 @@ export const Container = styled.div`
 
     border-radius: 12px;
     padding: 1rem;
-    margin-bottom: 1rem;
     font-size: 20px;
 
     @media (min-width: 800px) {
@@ -34,10 +33,10 @@ export const Container = styled.div`
     font-size: 0.8rem;
     width: max-content;
 
-    display: none;
+    visibility: hidden;
     position: relative;
     z-index: 23;
-    transform: translate(52%, -3rem);
+    transform: translate(53%, -2.15rem);
 
     color: var(--red);
 
@@ -48,7 +47,7 @@ export const Container = styled.div`
     @media (min-width: 800px) {
       font-size: 1rem;
 
-      transform: translate(53%, -3.33rem);
+      transform: translate(51%, -2.45rem);
     }
   }
 `;

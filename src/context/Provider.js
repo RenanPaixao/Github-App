@@ -20,7 +20,7 @@ const user1 = {
   following: null,
 };
 function showAlert() {
-  document.getElementById('alert').style.display = 'block';
+  document.getElementById('alert').style.visibility = 'visible';
 }
 
 async function searchUser(username) {
