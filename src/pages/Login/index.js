@@ -1,15 +1,16 @@
 import { Container, Button } from './style';
 import Image from '../../assets/images/github.svg';
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import Context from '../../context/Context';
 
 function Login() {
+  let history = useHistory();
   const { user, saveUser } = useContext(Context);
 
   function hideAlert() {
-    document.getElementById('alert').style.display = 'none';
+    document.getElementById('alert').style.visibility = 'hidden';
   }
 
   return (
@@ -32,15 +33,11 @@ function Login() {
         <label htmlFor="username">*Campo Obrigatório</label>
       </p>
       <Link
-        to="/home"
         onClick={async (e) => {
-          try {
-            if (!saveUser()) {
-              e.preventDefault();
-            }
-          } catch (err) {
-            alert(err);
+          if ((await saveUser()) === true) {
+            history.push('/home');
           }
+          e.preventDefault();
         }}
       >
         <Button>{'ENTRAR ->'}</Button>
