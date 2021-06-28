@@ -47,7 +47,17 @@ const ImageWrapperStyle = styled.div`
 
         margin: 0 0 0 0.5rem;
         
-  }`;
+  }
+  img {
+      width: 4.6275rem;
+      height: 4.6275rem;
+      margin: 0;
+
+      @media (min-width: 800px) {
+        width: 5.7375rem;
+        height: 5.7375rem;
+      }
+    }`;
     }
   }}
 `;
