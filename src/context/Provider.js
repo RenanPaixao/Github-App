@@ -52,6 +52,19 @@ async function searchUser(username) {
 
 const Provider = ({ children }) => {
   const [user, setUser] = useState(user1);
+  let followers = [];
+
+  function getFollowers() {
+    return followers;
+  }
+
+  async function searchFollows(username) {
+    return await axios
+      .get(`https://api.github.com/users/${username}/followers`)
+      .then((res) => {
+        followers = res.data;
+      });
+  }
 
   async function saveUser() {
     const valor = document.getElementById('username').value;
@@ -74,6 +87,8 @@ const Provider = ({ children }) => {
         user: user,
         setUser: setUser,
         saveUser: saveUser,
+        searchFollows: searchFollows,
+        getFollowers: getFollowers,
       }}
     >
       {children}

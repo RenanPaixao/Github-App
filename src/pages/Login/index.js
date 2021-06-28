@@ -1,13 +1,19 @@
 import { Container, Button } from './style';
 import Image from '../../assets/images/github.svg';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
 import Context from '../../context/Context';
 
 function Login() {
   let history = useHistory();
-  const { user, saveUser } = useContext(Context);
+  const { user, saveUser, searchFollows } = useContext(Context);
+
+  useEffect(() => {
+    if (user.login !== undefined) {
+      searchFollows(user.login);
+    }
+  }, [user]);
 
   function hideAlert() {
     document.getElementById('alert').style.visibility = 'hidden';
