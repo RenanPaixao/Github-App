@@ -1,10 +1,29 @@
 import ContentPageWrapper from '../../components/Container';
 import Follow from '../../components/Follow/index';
+import { useContext, useEffect } from 'react';
+import Context from '../../context/Context';
 
 function Followers() {
+  const { followers, getFollowers } = useContext(Context);
+
+  var validate = false;
+
+  useEffect(() => {
+    validate = true;
+  }, [followers]);
   return (
     <ContentPageWrapper>
-      <Follow />
+      {validate
+        ? ''
+        : getFollowers().map((element) => {
+            return (
+              <Follow
+                login={element.login}
+                image={element.avatar_url}
+                key={element.login}
+              />
+            );
+          })}
     </ContentPageWrapper>
   );
 }

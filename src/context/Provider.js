@@ -89,6 +89,7 @@ const Provider = ({ children }) => {
         saveUser: saveUser,
         searchFollows: searchFollows,
         getFollowers: getFollowers,
+        followers: followers,
       }}
     >
       {children}
